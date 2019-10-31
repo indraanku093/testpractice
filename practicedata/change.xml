@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2">
+<listeners>
+        <listener class-name="com.servicenow.retryfailedtest.retrylisteners"/>
+  </listeners>
+
+  <test name="Test">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.google.com"/>
+    <classes>
+    
+      <class name="com.servicenow.testscripts.change.testscripts">
+      
+        <methods>
+          <include name="login"/>
+          <include name="searchchange"/>
+          <include name="createchange"/>
+        </methods>
+      </class>
+      <class name="com.servicenow.testscripts.incident.testinc">
+      
+        <methods>
+          <include name="openinc"/>
+          <include name="statepending"/>
+          <include name="stateresolved"/>
+        </methods>
+      </class>
+      
+    </classes>
+  </test> 
+  
+    
+     
+      
+    
+  
+  
+</suite> 
