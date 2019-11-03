@@ -33,6 +33,7 @@ public class testscripts extends Baselib
 		System.out.println("change login");
 		Thread.sleep(4000);
 		onelogin.data(9,7,"ChangeTestCases", "Change Module" );	
+		//new commit through git GUI
 		Assert.assertNotEquals("pass", "fails");
 	}
 	
