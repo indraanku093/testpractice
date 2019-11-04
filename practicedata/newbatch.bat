@@ -1,2 +1,2 @@
-java -cp bin;lib\* org.testng.TestNG */practicedata/change.xml
+java -cp bin;lib\* org.testng.TestNG change.xml
 pause
