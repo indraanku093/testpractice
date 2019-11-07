@@ -10,7 +10,7 @@
     <parameter name="url" value="https://www.google.com"/>
     <classes>
     
-      <class name="com.servicenow.testscripts.change.testscripts">
+      <class name="com.servicenow.testscripts.change.tests">
       
         <methods>
           <include name="login"/>
