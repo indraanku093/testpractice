@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.servicenow.retryfailedtest.retrylisteners"/>
   </listeners>
-  <test thread-count="2" name="Test2(failed)" parallel="tests">
-    <parameter name="browser" value="internet"/>
-    <parameter name="url" value="https://www.gmail.com"/>
+  <test thread-count="2" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.google.com"/>
     <classes>
       <class name="com.servicenow.testscripts.incident.testinc">
         <methods>
@@ -21,6 +21,19 @@
           <include name="stateresolved"/>
         </methods>
       </class> <!-- com.servicenow.testscripts.incident.testinc -->
+      <class name="com.servicenow.testscripts.change.tests">
+        <methods>
+          <include name="setup"/>
+          <include name="aftersuite"/>
+          <include name="createchange"/>
+          <include name="beforetest"/>
+          <include name="searchchange"/>
+          <include name="testscriptstatus"/>
+          <include name="afterclass"/>
+          <include name="teardown"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.servicenow.testscripts.change.tests -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
