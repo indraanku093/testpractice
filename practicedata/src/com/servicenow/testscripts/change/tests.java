@@ -24,7 +24,7 @@ import com.servicenow.utility.Excelsheet;
 import com.servicenow.utility.screenshotlib;
 import com.servicenow.utility.waitlib;
 
-public class testscripts extends Baselib 
+public class tests extends Baselib 
 {
 	@Test(priority=1)
 	public void login() throws Exception, Exception

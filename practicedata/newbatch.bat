@@ -1,2 +1,2 @@
-java -cp bin;lib\* org.testng.TestNG change.xml
+java -cp C:\Users\180138\.jenkins\workspace\demo\practicedata\bin;C:\Users\180138\.jenkins\workspace\demo\practicedata\lib\* org.testng.TestNG C:\Users\180138\.jenkins\workspace\demo\practicedata\change.xml
 pause
